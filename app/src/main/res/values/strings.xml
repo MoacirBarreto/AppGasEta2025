@@ -3,11 +3,12 @@
     <string name="txt_titulo">Aplicativo Gasolina x Etanol 2025</string>
     <string name="txt_telefone_contato">Telefone de contato</string>
     <string name="txt_curso_desejado">Nome do curso desejado</string>
-    <string name="txt_sobrenome">Sobrenome</string>
-    <string name="txt_limpar">LIMPAR</string>
-    <string name="txt_salvar">SALVAR</string>
-    <string name="txt_finalizar">FINALIZAR</string>
-    <string name="txt_nome_aluno">Primeiro Nome</string>
+    <string name="txt_hint_edit_etanol">R$ Etanol</string>
+    <string name="txt_btn_limpar">LIMPAR</string>
+    <string name="txt_btn_salvar">SALVAR</string>
+    <string name="txt_btn_finalizar">FINALIZAR</string>
+    <string name="txt_btn_calcular">CALCULAR</string>
+    <string name="txt_hint_edit_gasolina">R$ Gasolina</string>
     <string name="txt_titulo_spinner">Curso desejado..</string>
     <string name="txt_selecione_um_curso">Selecione um curso</string>
 </resources>

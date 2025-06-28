@@ -31,10 +31,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:ems="10"
-            android:hint="@string/txt_nome_aluno"
+            android:hint="@string/txt_hint_edit_gasolina"
             android:inputType="text"
             android:minHeight="48dp"
-            android:text="@string/txt_nome_aluno"
+            android:text="@string/txt_hint_edit_gasolina"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
@@ -45,10 +45,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:ems="10"
-            android:hint="@string/txt_sobrenome"
+            android:hint="@string/txt_hint_edit_etanol"
             android:inputType="text"
             android:minHeight="48dp"
-            android:text="@string/txt_sobrenome"
+            android:text="@string/txt_hint_edit_etanol"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
-            android:text="@string/txt_limpar"
+            android:text="@string/txt_btn_limpar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/txt_salvar"
+            android:text="@string/txt_btn_salvar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
@@ -128,7 +128,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/txt_finalizar"
+            android:text="@string/txt_btn_finalizar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
