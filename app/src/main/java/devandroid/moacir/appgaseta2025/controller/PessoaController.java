@@ -6,18 +6,17 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 import devandroid.moacir.appgaseta2025.model.Pessoa;
-import devandroid.moacir.appgaseta2025.view.MainActivity;
 
 public class PessoaController {
 
     SharedPreferences preferences;
     SharedPreferences.Editor listaVip;
     public static final String NOME_PREFERENCES = "pref_listavip";
-    public PessoaController(MainActivity mainActivity) {
-        preferences =
-                mainActivity.getSharedPreferences(NOME_PREFERENCES, 0);
-        listaVip = preferences.edit();
-    }
+//    public PessoaController(MainActivity mainActivity) {
+//        preferences =
+//                mainActivity.getSharedPreferences(NOME_PREFERENCES, 0);
+//        listaVip = preferences.edit();
+//    }
 
     @NonNull
     @Override
@@ -25,7 +24,8 @@ public class PessoaController {
         Log.d("MVC_Controller", "Controller iniciado");
         return super.toString();
     }
-     public void salvar(Pessoa pessoa) {
+
+    public void salvar(Pessoa pessoa) {
         Log.d("MVC_Controller", "Salvo" + pessoa.toString());
 
         listaVip.putString("primeiroNome", pessoa.getPrimeiroNome());
@@ -34,6 +34,7 @@ public class PessoaController {
         listaVip.putString("telefone", pessoa.getTelefoneContato());
         listaVip.apply();
     }
+
     public Pessoa buscar(Pessoa pessoa) {
         pessoa.setPrimeiroNome(preferences.getString("primeiroNome", ""));
         pessoa.setSobreNome(preferences.getString("sobreNome", ""));
@@ -41,6 +42,7 @@ public class PessoaController {
         pessoa.setTelefoneContato(preferences.getString("telefone", ""));
         return pessoa;
     }
+
     public void limpar() {
 
         listaVip.clear();
