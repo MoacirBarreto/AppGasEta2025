@@ -20,7 +20,7 @@ public class GasEtaActivity extends AppCompatActivity {
        // UtilGasEta.metodoNaoEstatico();
 
         Toast.makeText(GasEtaActivity.this,
-                UtilGasEta.calcularMelhorOPcao(5.12,3.12),
+                UtilGasEta.calcularMelhorOPcao(5.12,5),
                 Toast.LENGTH_LONG).show();
 
     }
