@@ -55,6 +55,8 @@
                     android:hint="@string/txt_hint_edit_etanol"
                     android:inputType="numberDecimal"
                     android:text="@string/txt_hint_edit_etanol" />
+
+
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <Button
@@ -67,36 +69,38 @@
                 android:text="@string/txt_btn_calcular" />
 
             <TextView
-                android:id="@+id/txtListaSpinner"
+                android:id="@+id/txtResultado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:gravity="left"
-                android:text="@string/txt_titulo_spinner"
+                android:gravity="center"
+                android:text="@string/txt_resultado"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/btnLimpar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:text="@string/txt_btn_limpar" />
+
                 <Button
                     android:id="@+id/btnSalvar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginEnd="48dp"
                     android:text="@string/txt_btn_salvar" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
