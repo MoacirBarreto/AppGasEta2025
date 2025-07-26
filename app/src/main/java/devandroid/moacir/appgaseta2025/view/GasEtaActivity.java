@@ -62,14 +62,17 @@ public class GasEtaActivity extends AppCompatActivity {
                     editEtanol.setError("Campo Obrigatório");
                     editEtanol.requestFocus();
                     isDadosOk = false;
-                }
+
+                                    }
                 if(isDadosOk){
                     precoGasolina = Double.parseDouble(editGasolina.getText().toString());
                     precoEtanol = Double.parseDouble(editEtanol.getText().toString());
                     recomendacao = UtilGasEta.calcularMelhorOPcao(precoGasolina,precoEtanol);
                     txtResultado.setText(recomendacao);
+                    btnSalvar.setEnabled(true);
                 }else {
                     Toast.makeText(GasEtaActivity.this, "Preencha os campos", Toast.LENGTH_LONG).show();
+                    btnSalvar.setEnabled(false);
                 }
             }
         });
@@ -91,7 +94,6 @@ public class GasEtaActivity extends AppCompatActivity {
 
                 int parada = 0;
 
-
             }
         });
 
@@ -100,7 +102,8 @@ public class GasEtaActivity extends AppCompatActivity {
             public void onClick(View v) {
                 editGasolina.setText("");
                 editEtanol.setText("");
-
+                txtResultado.setText("RESULTADO");
+                btnSalvar.setEnabled(false);
             }
         });
 
