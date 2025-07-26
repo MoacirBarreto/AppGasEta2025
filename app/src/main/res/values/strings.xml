@@ -1,12 +1,12 @@
 <resources>
     <string name="txt_app_name">AppGasEta2025</string>
-    <string name="txt_titulo">Aplicativo Gasolina x Etanol 2025</string>
+    <string name="txt_titulo">Gasolina ou Etanol 2025</string>
     <string name="txt_hint_edit_etanol">R$ Etanol</string>
     <string name="txt_btn_limpar">LIMPAR</string>
     <string name="txt_btn_salvar">SALVAR</string>
     <string name="txt_btn_finalizar">FINALIZAR</string>
     <string name="txt_btn_calcular">CALCULAR</string>
     <string name="txt_hint_edit_gasolina">R$ Gasolina</string>
-    <string name="txt_resultado">Resultado</string>
-        <string name="txt_hint_edit_resultado">Resultado</string>
+    <string name="txt_resultado">RESULTADO</string>
+    <string name="txt_hint_edit_resultado">RESULTADO</string>
 </resources>

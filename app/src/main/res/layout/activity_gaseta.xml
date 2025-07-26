@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    tools:context="this">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +27,14 @@
                 android:text="@string/txt_titulo"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ImgView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="48dp"
+                android:src="@mipmap/ic_launcher_round" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -55,8 +63,6 @@
                     android:hint="@string/txt_hint_edit_etanol"
                     android:inputType="numberDecimal"
                     android:text="@string/txt_hint_edit_etanol" />
-
-
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <Button
@@ -64,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/txt_btn_calcular" />
 
@@ -73,36 +79,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="16dp"
                 android:gravity="center"
                 android:text="@string/txt_resultado"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <Button
+                android:id="@+id/btnLimpar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/txt_btn_limpar" />
 
-                <Button
-                    android:id="@+id/btnLimpar"
-                    android:layout_width="120dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
-                    android:text="@string/txt_btn_limpar" />
-
-                <Button
-                    android:id="@+id/btnSalvar"
-                    android:layout_width="120dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="48dp"
-                    android:text="@string/txt_btn_salvar" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/txt_btn_salvar" />
 
             <Button
                 android:id="@+id/btnFinalizar"
@@ -112,6 +112,8 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/txt_btn_finalizar" />
+
+
         </LinearLayout>
     </ScrollView>
 
