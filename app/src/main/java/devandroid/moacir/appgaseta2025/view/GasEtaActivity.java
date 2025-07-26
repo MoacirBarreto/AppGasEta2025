@@ -15,29 +15,22 @@ import devandroid.moacir.appgaseta2025.apoio.UtilGasEta;
 
 
 public class GasEtaActivity extends AppCompatActivity {
-
     EditText editGasolina;
     EditText editEtanol;
-
     TextView txtResultado;
-
     Button btnCalcular;
     Button btnLimpar;
     Button btnSalvar;
     Button btnFinalizar;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_gaseta);
 
         editGasolina = findViewById(R.id.editGasolina);
         editEtanol = findViewById(R.id.editEtanol);
-
         txtResultado = findViewById(R.id.txtResultado);
-
         btnCalcular = findViewById(R.id.btnCalcular);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnLimpar = findViewById(R.id.btnLimpar);
@@ -46,48 +39,38 @@ public class GasEtaActivity extends AppCompatActivity {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
         btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(GasEtaActivity.this, "Volte sempre", Toast.LENGTH_LONG).show();
+                Toast.makeText(GasEtaActivity.this, "GasEta: Volte sempre", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
-
-
-
-
-
         Toast.makeText(GasEtaActivity .this,
-                            UtilGasEta.calcularMelhorOPcao(5.12,5),
-                    Toast.LENGTH_LONG).
-
-                    show();
+                            UtilGasEta.calcularMelhorOPcao(5.12,2),
+                            Toast.LENGTH_LONG).
+                show();
 
                 }
             }
